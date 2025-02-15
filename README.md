@@ -1,27 +1,62 @@
 # PlanSmart
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.14.
+📅 **PlanSmart** es una aplicación web que te ayuda a organizar tu semana de manera visual e intuitiva. Arrastra tareas, usuarios y actividades a un tablero semanal y maximiza tu productividad.
 
-## Development server
+## Características
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- ✅ **Tableros personalizables** - Organiza tus tareas y eventos a tu manera.
+- ✅ **Drag & Drop** - Arrastra y suelta elementos para planificar tu semana.
+- ✅ **Horario Semanal** - Visualiza tus tareas de lunes a domingo con horarios definidos.
+- ✅ **Interfaz moderna** - Desarrollada con Angular 18, Angular CDK y PrimeNG.
+- ✅ **Modo local** - Los datos se almacenan en tu navegador sin necesidad de un backend.
 
-## Code scaffolding
+## Vista Previa
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Vista Previa](./public/preview.png)
 
-## Build
+## Tecnologías
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular 18 🅰️
+- Angular CDK 🏗️
+- PrimeNG 🎨
 
-## Running unit tests
+## Instalación
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Sigue estos pasos para instalar y ejecutar PlanSmart en tu máquina local:
 
-## Running end-to-end tests
+1. **Clona este repositorio**
+    ```bash
+    git clone https://github.com/tuusuario/plansmart.git
+    ```
+2. **Entra al directorio**
+    ```bash
+    cd plansmart
+    ```
+3. **Instala las dependencias**
+    ```bash
+    npm install
+    ```
+4. **Ejecuta el servidor local**
+    ```bash
+    ng serve
+    ```
+5. **Abre tu navegador y visita**
+    ```bash
+    http://localhost:4200
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Próximas Funcionalidades
 
-## Further help
+- ✨ Sincronización en la nube
+- ✨ Perfiles de usuario
+- ✨ Notificaciones y recordatorios
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Contribuir
+
+💡 ¡Tu ayuda es bienvenida! Si tienes ideas o mejoras, abre un issue o haz un pull request.
+
+📧 Para sugerencias o dudas, contáctame en [tuemail@example.com](mailto:f3rjara@gmail.com).
+
+---
+
+⚡ Planifica con Inteligencia. Usa PlanSmart. ⚡
