@@ -25,25 +25,25 @@
 Sigue estos pasos para instalar y ejecutar PlanSmart en tu máquina local:
 
 1. **Clona este repositorio**
-    ```bash
-    git clone https://github.com/tuusuario/plansmart.git
-    ```
+   ```bash
+   git clone https://github.com/tuusuario/plansmart.git
+   ```
 2. **Entra al directorio**
-    ```bash
-    cd plansmart
-    ```
+   ```bash
+   cd plansmart
+   ```
 3. **Instala las dependencias**
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 4. **Ejecuta el servidor local**
-    ```bash
-    ng serve
-    ```
+   ```bash
+   ng serve
+   ```
 5. **Abre tu navegador y visita**
-    ```bash
-    http://localhost:4200
-    ```
+   ```bash
+   http://localhost:4200
+   ```
 
 ## Próximas Funcionalidades
 
@@ -55,7 +55,7 @@ Sigue estos pasos para instalar y ejecutar PlanSmart en tu máquina local:
 
 💡 ¡Tu ayuda es bienvenida! Si tienes ideas o mejoras, abre un issue o haz un pull request.
 
-📧 Para sugerencias o dudas, contáctame en [tuemail@example.com](mailto:f3rjara@gmail.com).
+📧 Para sugerencias o dudas, contáctame en [f3rjara@gmail.com](mailto:f3rjara@gmail.com).
 
 ---
 
