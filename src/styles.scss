@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+body * {
+  @apply transition-colors duration-200 ease-in;
+  box-sizing: border-box !important;
+}
+
+/* Configurar el tema claro por defecto */
+body {
+  @apply bg-slate-50 text-zinc-950;
+}
+
+/* Modo oscuro */
+.dark body {
+  @apply bg-slate-950 text-zinc-200;
+}

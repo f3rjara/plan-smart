@@ -1,0 +1,17 @@
+:host {
+  border: 2px solid forestgreen;
+  display: block;
+  height: 100dvh;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .change-theme {
+    background-color: red;
+    display: inline-block;
+    padding: .5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .4;
+  }
+}
