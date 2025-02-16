@@ -9,11 +9,12 @@ import { ThemeUiService } from '@services/theme/theme-ui.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormControl } from '@angular/forms';
 import { ThemeMode } from '@interfaces/theme-ui.interface';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-auth',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, ButtonModule],
   templateUrl: './auth.component.html',
   styleUrl: './auth.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

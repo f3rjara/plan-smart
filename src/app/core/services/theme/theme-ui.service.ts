@@ -12,10 +12,7 @@ export class ThemeUiService {
 
   constructor() {
     this.applyTheme(this.themeMode());
-    this.mediaQuery.addEventListener(
-      'change',
-      this.handleSystemThemeChange.bind(this)
-    );
+    this.mediaQuery.addEventListener('change', this.handleSystemThemeChange.bind(this));
     effect(() => this.applyTheme(this.themeMode()));
   }
 
@@ -24,8 +21,7 @@ export class ThemeUiService {
   }
 
   toggleTheme(): void {
-    const newTheme: IThemeMode =
-      this.themeMode() === ThemeMode.D ? ThemeMode.L : ThemeMode.D;
+    const newTheme: IThemeMode = this.themeMode() === ThemeMode.D ? ThemeMode.L : ThemeMode.D;
     this.themeMode.set(newTheme);
     localStorage.setItem(this.storageKey, this.themeMode());
   }
@@ -37,18 +33,13 @@ export class ThemeUiService {
 
   private getInitialTheme(): IThemeMode {
     const storedTheme = localStorage.getItem(this.storageKey);
-    return storedTheme
-      ? (storedTheme as IThemeMode)
-      : this.mediaQuery.matches
-        ? ThemeMode.D
-        : ThemeMode.L;
+    return storedTheme ? (storedTheme as IThemeMode) : this.mediaQuery.matches ? ThemeMode.D : ThemeMode.L;
   }
 
   private applyTheme(theme: IThemeMode): void {
-    document.documentElement.classList.toggle(
-      ThemeMode.D,
-      theme === ThemeMode.D
-    );
+    const isDarkMode = theme === ThemeMode.D;
+    document.documentElement.classList.toggle(ThemeMode.D, isDarkMode);
+    document.body.classList.toggle(ThemeMode.D, isDarkMode);
   }
 
   private handleSystemThemeChange(event: MediaQueryListEvent): void {

@@ -1,15 +1,13 @@
 import { ApplicationConfig } from '@angular/core';
-import { importProvidersFrom } from '@angular/core';
 import { provideRouter, withComponentInputBinding } from '@angular/router';
-import {
-  provideHttpClient,
-  withInterceptorsFromDi,
-} from '@angular/common/http';
-import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { routes } from './app.routes';
 import localeCo from '@angular/common/locales/es-CO';
 import { registerLocaleData } from '@angular/common';
 import { APP_PROVIDERS } from './app.providers';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { providePrimeNG } from 'primeng/config';
+import { CustomPreset } from './../assets/custom-preset';
 registerLocaleData(localeCo);
 
 /**
@@ -23,7 +21,21 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes, withComponentInputBinding()),
     provideHttpClient(withInterceptorsFromDi()),
-    provideAnimations(),
+    provideAnimationsAsync(),
+    providePrimeNG({
+      ripple: true,
+      theme: {
+        preset: CustomPreset,
+        options: {
+          prefix: 'p',
+          darkModeSelector: '.dark',
+          cssLayer: {
+            name: 'primeng',
+            order: 'app-styles, primeng',
+          },
+        },
+      },
+    }),
     ...APP_PROVIDERS,
   ],
 };

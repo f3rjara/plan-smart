@@ -1,8 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
-html, body {
-  margin: 0;
-  padding: 0;
+@use './assets/scss/normalize' as normalize;
+@import 'primeicons/primeicons.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-family: 'Inter', sans-serif;
+  --font-size: 14px;  
 }
-body * {
-  box-sizing: border-box !important;
+
+html, body {
+  transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+/* 🎨 Modo Claro */
+html:not(.dark), body:not(.dark) {
+  --background-color: #f5f5f5;
+  --text-color: #151516; 
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* 🎨 Modo Oscuro */
+html.dark, body.dark {
+  --background-color: #151516;
+  --text-color: #f5f5f5;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
